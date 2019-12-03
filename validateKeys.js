@@ -26,6 +26,8 @@ function validateKeys(object, expectedKeys) {
     return false;
   }
   for(let i = 0; i < expectedKeys.length; i++) {
+    //for each key in expectedKeys, if there is a match between a key in expectedKeys and a key in our objectKeyArray,
+    //return true;
     if(expectedKeys.find(key => key === objectKeyArray[i]))
       return true;
     else 
